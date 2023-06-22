@@ -21,8 +21,6 @@ let getWeather = function (event) {
             document.querySelector("#city_title").innerHTML = `${response.data.name}`
             document.querySelector("#now").innerHTML = `${now}`
             document.querySelector("#temp_type").innerHTML = `${response.data.weather[0].main}`
-
-
         })
         .catch(function (error) {
             // handle error
