@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="head">
+
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+
+            <form onsubmit="getWeather(event); return false">
+
+                <h2>Weather App</h2>
+
+                <label for="cityName">
+                    <input type="text" name="cityName" id="cityName" placeholder="Enter your city name">
+                </label>
+
+                <button type="submit">search</button>
+
+                <div class="city">
+                    <div class="city_title" id="city_title">
+                        Karachi
+                    </div>
+                   
+                    <div class="now" id="now">6/21/2023</div>
+                </div>
+
+                <div class="temp_det">
+
+                    <div class="icon">
+                        icon
+                    </div>
+
+                   
+                    <div class="temp" id="temp">
+                            29 <sup>°c</sup>
+                    </div>
+
+                </div>
+                <p id="temp_type">somke</p>
+
+                <div class="items">
+                    <div class="item humadity">Humidity</div>
+                    <div class="item humadity_num" id="humadity_num">70%</div>
+                </div>
+
+                <div class="items">
+                    <div class="item winds">Wind</div>
+                    <div class="item winds_num" id="winds_num">7.2km/h</div>
+                </div>
+
+                <div class="items">
+                    <div class="item cloud">Clouds</div>
+                    <div class="item cloud_num" id="cloud_num">75%</div>
+                </div>
+
+
+            </form>
+
+            
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
